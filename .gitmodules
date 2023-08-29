@@ -1,3 +1,6 @@
 [submodule "comrak-example/comrak"]
 	path = comrak-example/comrak
 	url = https://github.com/brson/comrak.git
+[submodule "soroban-examples"]
+	path = soroban-examples
+	url = https://github.com/stellar/soroban-examples.git
