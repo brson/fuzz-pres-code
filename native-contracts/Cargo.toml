@@ -8,10 +8,11 @@ crate-type = ["cdylib", "rlib"]
 doctest = false
 
 [features]
-testutils = []
+testutils = ["subcontract/testutils"]
 
 [dependencies]
 soroban-sdk = "0.9.2"
+subcontract.path = "subcontract"
 
 [dev_dependencies]
 soroban-sdk = { version = "0.9.2", features = ["testutils"] }

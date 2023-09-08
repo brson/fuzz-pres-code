@@ -7,6 +7,7 @@ pub struct SubContract;
 
 #[contractimpl]
 impl SubContract {
-    pub fn hello(env: Env, amount: i128) {
+    pub fn add(env: Env, amount: i128) -> i128 {
+        amount + 1
     }
 }
