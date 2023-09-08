@@ -1,5 +1,5 @@
 [package]
-name = "subcontract"
+name = "mycontract"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,10 +8,11 @@ crate-type = ["cdylib", "rlib"]
 doctest = false
 
 [features]
-testutils = ["soroban-sdk/testutils"]
+testutils = ["subcontract/testutils", "soroban-sdk/testutils"]
 
 [dependencies]
 soroban-sdk = "0.9.2"
+subcontract.path = "../subcontract"
 
 [dev_dependencies]
 soroban-sdk = { version = "0.9.2", features = ["testutils"] }
