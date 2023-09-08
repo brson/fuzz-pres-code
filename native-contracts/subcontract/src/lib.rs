@@ -7,7 +7,7 @@ pub struct SubContract;
 
 #[contractimpl]
 impl SubContract {
-    pub fn add(env: Env, amount: i128) -> i128 {
-        amount + 1
+    pub fn add(_env: Env, amount: i128) -> i128 {
+        amount.saturating_add(1)
     }
 }

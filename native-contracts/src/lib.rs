@@ -2,8 +2,7 @@
 
 use soroban_sdk::{
     contract, contractimpl,
-    Env,
-    Symbol, Address,
+    Env, Address,
 };
 
 use subcontract::SubContractClient;
