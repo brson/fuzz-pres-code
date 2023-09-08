@@ -9,6 +9,7 @@ use subcontract::SubContract;
 
 fuzz_target!(|amount: i128| {
     let env = Env::default();
+    env.budget().reset_unlimited();
 
     let mycontract_address = Address::random(&env);
     let subcontract_address = Address::random(&env);
