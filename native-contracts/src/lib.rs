@@ -3,10 +3,13 @@
 use soroban_sdk::{contract, contractimpl, Env};
 
 #[contract]
-pub struct Contract;
+pub struct MyContract;
 
 #[contractimpl]
-impl Contract {
-    pub fn hello(env: Env, amount: i128) {
+impl MyContract {
+    pub fn install_subcontract(env: Env) {
+    }
+
+    pub fn say_hello(env: Env, amount: i128) {
     }
 }
