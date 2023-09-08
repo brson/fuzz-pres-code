@@ -19,6 +19,5 @@ fuzz_target!(|amount: i128| {
     let client = MyContractClient::new(&env, &mycontract_address);
 
     let new_amount = client.defer_add(&subcontract_address, &amount);
-
     assert_eq!(new_amount, amount.saturating_add(1));
 });
